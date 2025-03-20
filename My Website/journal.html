@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Journal</title>
+</head>
+<body class="journal-page">
+
+    <!-- Back Button -->
+    <button class="back-button" onclick="history.back()">← Back</button>
+
+    <div class="journal-container">
+        <h1>Your Daily Journal</h1>
+        <textarea id="journal-entry" placeholder="Write your thoughts here..." rows="10"></textarea>
+        <button id="save-journal">Save</button>
+    </div>
+
+    <script>
+        document.getElementById('save-journal').addEventListener('click', function() {
+            let entry = document.getElementById('journal-entry').value;
+            if (entry.trim() === "") {
+                alert("Please write something before saving.");
+                return;
+            }
+            localStorage.setItem("journalEntry", entry);
+            alert("Journal entry saved!");
+        });
+
+        // Load saved journal entry (if any)
+        window.onload = function() {
+            let savedEntry = localStorage.getItem("journalEntry");
+            if (savedEntry) {
+                document.getElementById('journal-entry').value = savedEntry;
+            }
+        };
+    </script>
+
+</body>
+</html>

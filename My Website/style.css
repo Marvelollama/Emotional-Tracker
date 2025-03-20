@@ -1,0 +1,295 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    color: #f4f5f3;
+    margin: 0;
+    padding: 0;
+}
+
+/* Styles for index.html */
+body.home-page {
+    background: url('images/home_bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Header Navigation */
+body.home-page header {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    z-index: 10;
+}
+
+body.home-page nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1.5rem;
+}
+
+body.home-page nav ul li {
+    display: inline;
+}
+
+body.home-page nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+body.home-page nav ul li a:hover {
+    color: #e6ce19;
+}
+
+/* Main Section */
+body.home-page main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 2rem;
+    position: relative;
+}
+
+/* Updated Heading Style */
+body.home-page h1 {
+    text-align: center;
+    font-size: 2.8rem;
+    max-width: 90%;
+    white-space: nowrap;
+    color: #ffffff;
+    margin-bottom: 2rem;
+    position: absolute;
+    top: 25%;
+}
+
+/* Highlight "Mental Health" in Yellow */
+.highlight {
+    color: #e6ce19;
+}
+
+/* Button Group Styling */
+.button-group {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.button-group button {
+    padding: 0.8rem 2rem;
+    font-size: 1.2rem;
+    background-color: #3980ac;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.button-group button:hover {
+    background-color: #e6ce19;
+    transform: scale(1.05);
+}
+
+/* Analyze Button Styling */
+.analyze-btn {
+    margin-top: 2rem;
+    padding: 1rem 3rem;
+    font-size: 1.3rem;
+    background-color: #d35400;
+    color: #ffffff;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.analyze-btn:hover {
+    background-color: #e67e22;
+    transform: scale(1.1);
+}
+
+/* Resources Button (Lower Right Corner) */
+.resources-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 80px;
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    background-color: #2c3e50;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.resources-btn:hover {
+    background-color: #34495e;
+    transform: scale(1.1);
+}
+
+/* Styles for questionnaire.html */
+body.questionnaire-page {
+    background: url('images/home_bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+    color: #ecc82c;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 2%;
+    color: #daba28;
+}
+
+label {
+    font-size: 1.2rem;
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #cce7e8;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #00796b;
+}
+
+button {
+    display: block;
+    margin: 2rem auto;
+    padding: 0.8rem 2rem;
+    font-size: 1.2rem;
+    background-color: #3980ac;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background-color: #e6ce19;
+    transform: scale(1.05);
+}
+
+/* Back Button Styling */
+.back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: #faf7f7;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #c4aa17;
+    transform: scale(1.05);
+}
+
+/* Styles for journal.html */
+body.journal-page {
+    background: url('images/home_bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+    color: #ecc82c;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Journal Container */
+.journal-container {
+    width: 60%;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.journal-container h1 {
+    font-size: 2rem;
+    color: #e6ce19;
+}
+
+/* Textarea Styling */
+#journal-entry {
+    width: 100%;
+    height: 200px;
+    padding: 10px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border: 1px solid #00796b;
+    resize: none;
+    background-color: #fff;
+    color: #000;
+}
+
+/* Save Button */
+#save-journal {
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: #3980ac;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#save-journal:hover {
+    background-color: #e6ce19;
+    transform: scale(1.05);
+}
+
+/* Back Button Styling */
+.back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: #faf7f7;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #c4aa17;
+    transform: scale(1.05);
+}
